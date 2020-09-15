@@ -2,8 +2,9 @@
 	box-sizing: border-box; /* hace que los bordes ocupen el espacio hacia dentro. */
 	margin:	0;
     padding: 0; 
-    font-size: 0;  /*Quita los espacios que los navegadores ponen entre etiquetas. */
-    font-family: 'Lato', sans-serif;
+      /*Quita los espacios que los navegadores ponen entre etiquetas. */
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 body {
@@ -164,5 +165,20 @@ ul.slider li:target {
     background-color: red;
     opacity: 2;
     top: 10%;
+    justify-content: space-between;
 
 }
+
+.nombre-programador{
+    font-family: 'Titillium Web', sans-serif;
+
+    font-size: 4rem;
+
+    line-height: 6.154rem;
+
+    font-weight: 800;
+
+
+    text-transform: uppercase;
+}
+
