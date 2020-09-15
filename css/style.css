@@ -1,0 +1,168 @@
+* {
+	box-sizing: border-box; /* hace que los bordes ocupen el espacio hacia dentro. */
+	margin:	0;
+    padding: 0; 
+    font-size: 0;  /*Quita los espacios que los navegadores ponen entre etiquetas. */
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.heigth {
+    height: 592.969px;
+}
+
+.header {
+    position: relative;
+}
+
+.flex {
+
+     display: flex;
+     flex-wrap: wrap; /* hace que flex no te ajuste automatico todo */
+
+}
+
+.col6 {
+    width: calc(100% / 2);;
+    height: 50px;
+    background-color: blueviolet;
+    border: solid 1px black;
+}
+
+.col8 {
+    width: calc(100% / 1.5);
+    height: 50px;
+    background-color: royalblue;
+    border: solid 1px black;
+}
+
+.col4 {
+    width: calc(100% / 3);
+    height: 50px;
+    background-color: rebeccapurple;
+    border: solid 1px black;
+}
+
+.col1 {
+    width: calc(100% / 12);
+    height: 50px;
+    background-color: rebeccapurple;
+    border: solid 1px black;
+}
+
+.margin {
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#slide1 {
+    background-size: cover;
+}
+
+#slide2 {
+    background-size: cover;
+}
+
+#slide3 {
+    background-size: cover;
+}
+
+a {
+    font-size: 16px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+ul.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    transition: opacity 500ms ease 0s;
+}
+
+ul.slider li img {
+    width: 100%;
+    height: 592.969px;
+    object-fit: cover;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+ul.slider li:first-child {
+    opacity: 1;
+}
+
+ul.slider li:target {
+    opacity: 1;
+}
+
+.menu {
+    text-align: center;
+    opacity: 1.2;
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    right: 45%;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 8px;
+    width: 13px;
+    height: 13px;
+    font-size: 20px;
+    border-radius: 100%;
+    margin-right: 5px;
+    border: solid 1px white;
+    transition: opacity 0.2s;
+}
+
+.menu li a:hover {
+    background-color: white;
+}
+
+.header-information {
+    position: absolute;
+    width: 90%;
+    height: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: red;
+    opacity: 2;
+    top: 10%;
+
+}
