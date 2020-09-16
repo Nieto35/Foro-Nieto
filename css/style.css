@@ -15,12 +15,9 @@ body {
     background-color: blue;
 }
 
-.heigth {
-    height: 592.969px;
-}
-
 .header {
     position: relative;
+    height: 592.969px;
 }
 
 .flex {
@@ -68,15 +65,7 @@ body {
     margin-left: 5%;
 }
 
-#slide1 {
-    background-size: cover;
-}
-
-#slide2 {
-    background-size: cover;
-}
-
-#slide3 {
+#slide1, #slide2, #slide3 {
     background-size: cover;
 }
 
@@ -101,8 +90,8 @@ ul.slider li {
     opacity: 0;
     width: inherit;
     height: inherit;
-    background-color: white;
-    transition: opacity 500ms ease 0s;
+    background-color: black;
+    transition: 500ms ease 0s;
 }
 
 ul.slider li img {
@@ -129,6 +118,7 @@ ul.slider li:target {
     top: 90%;
     left: 45%;
     right: 45%;
+    z-index: 3;
 }
 
 .menu li {
@@ -147,7 +137,7 @@ ul.slider li:target {
     border-radius: 100%;
     margin-right: 5px;
     border: solid 1px white;
-    transition: opacity 0.2s;
+    transition: 0.2s;
 }
 
 .menu li a:hover {
@@ -162,7 +152,6 @@ ul.slider li:target {
     margin-right: 5%;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: red;
     opacity: 2;
     top: 10%;
     justify-content: space-between;
@@ -171,14 +160,25 @@ ul.slider li:target {
 
 .nombre-programador{
     font-family: 'Titillium Web', sans-serif;
-
-    font-size: 4rem;
-
-    line-height: 6.154rem;
-
+    font-size: 2rem;
+    line-height: 3.5rem;
     font-weight: 800;
-
-
+    color: white;
     text-transform: uppercase;
+    z-index: 2;
+}
+
+.nombre-programador span{
+    color: #ffc311 ;
+}
+
+.overlay { 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background:rgba(0,0,0,0.5);
+    z-index: 1;
 }
 
