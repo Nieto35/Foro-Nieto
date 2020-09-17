@@ -7,6 +7,47 @@
     font-family: 'Titillium Web', sans-serif;
 }
 
+.col-1 {
+    width: 8.33%;    
+}
+.col-2 {
+    width: 16.66%;    
+}
+.col-3 {
+    width: 25%;    
+}
+.col-4 {
+    width: 33.33%;    
+}
+.col-5 {
+    width: 41.66%;    
+}
+.col-6 {
+    width: 50%;    
+}
+.col-7 {
+    width: 58.33%;    
+}
+.col-8 {
+    width: 66.66%;    
+}
+.col-9 {
+    width: 75%;    
+}
+.col-10 {
+    width: 83.33%;    
+}
+.col-11 {
+    width: 91.66%;    
+}
+.col-12 {
+    width: 100%;    
+}
+
+/* <!--================================
+            Globals Configurations
+    =================================--> */
+
 body {
     background-color: white;
 }
@@ -17,7 +58,8 @@ body {
 
 .header {
     position: relative;
-    height: 592.969px;
+    height: 80vh;
+    overflow: hidden;
 }
 
 .flex {
@@ -27,50 +69,24 @@ body {
 
 }
 
-.col6 {
-    width: calc(100% / 2);;
-    height: 50px;
-    background-color: blueviolet;
-    border: solid 1px black;
-}
-
-.col8 {
-    width: calc(100% / 1.5);
-    height: 50px;
-    background-color: royalblue;
-    border: solid 1px black;
-}
-
-.col4 {
-    width: calc(100% / 3);
-    height: 50px;
-    background-color: rebeccapurple;
-    border: solid 1px black;
-}
-
-.col1 {
-    width: calc(100% / 12);
-    height: 50px;
-    background-color: rebeccapurple;
-    border: solid 1px black;
-}
-
 .margin {
     margin-bottom: 10px;
 }
 
-.container {
-    width: 90%;
-    margin-right: 5%;
-    margin-left: 5%;
+.overlay { 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background:rgba(0,0,0,0.5);
 }
 
+/* <!--================================
+            Sliders Configurations
+    =================================--> */
 #slide1, #slide2, #slide3 {
     background-size: cover;
-}
-
-a {
-    font-size: 16px;
 }
 
 ul, li {
@@ -111,6 +127,10 @@ ul.slider li:target {
     opacity: 1;
 }
 
+/* <!--================================
+    3 circulos para pasar de imagenes
+    =================================--> */
+
 .menu {
     text-align: center;
     opacity: 1.2;
@@ -118,7 +138,6 @@ ul.slider li:target {
     top: 90%;
     left: 45%;
     right: 45%;
-    z-index: 3;
 }
 
 .menu li {
@@ -144,9 +163,12 @@ ul.slider li:target {
     background-color: white;
 }
 
+/* <!--================================
+    INFORMACION (FELIPE NIETO     --     PROGRAMADOR)
+    =================================--> */
+
 .header-information {
     position: absolute;
-    width: 90%;
     height: 10%;
     margin-left: 5%;
     margin-right: 5%;
@@ -165,20 +187,12 @@ ul.slider li:target {
     font-weight: 800;
     color: white;
     text-transform: uppercase;
-    z-index: 2;
+    position: relative;
 }
 
 .nombre-programador span{
     color: #ffc311 ;
 }
 
-.overlay { 
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background:rgba(0,0,0,0.5);
-    z-index: 1;
-}
+
 
