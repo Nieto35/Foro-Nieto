@@ -323,7 +323,7 @@ ul.slider li:target {
             text-align: center;
             opacity: 1.2;
             position: absolute;
-            top: 90%;
+            top: 85%;
             left: 1%;
             right: 80%;
         }
