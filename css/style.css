@@ -258,7 +258,7 @@ ul.slider li:target {
         .center {
             position: absolute;
             height: 60%;
-            top: 15%;
+            top: 13%;
             justify-content: center;
             /* background-color: blue; */
         }
