@@ -2,47 +2,10 @@
 	box-sizing: border-box; /* hace que los bordes ocupen el espacio hacia dentro. */
 	margin:	0;
     padding: 0; 
-      /*Quita los espacios que los navegadores ponen entre etiquetas. */
     font-family: 'Poppins', sans-serif;
     font-family: 'Titillium Web', sans-serif;
 }
 
-.col-1 {
-    width: 8.33%;    
-}
-.col-2 {
-    width: 16.66%;    
-}
-.col-3 {
-    width: 25%;    
-}
-.col-4 {
-    width: 33.33%;    
-}
-.col-5 {
-    width: 41.66%;    
-}
-.col-6 {
-    width: 50%;    
-}
-.col-7 {
-    width: 58.33%;    
-}
-.col-8 {
-    width: 66.66%;    
-}
-.col-9 {
-    width: 75%;    
-}
-.col-10 {
-    width: 83.33%;    
-}
-.col-11 {
-    width: 91.66%;    
-}
-.col-12 {
-    width: 100%;    
-}
 
 /* <!--================================
             Globals Configurations
@@ -52,9 +15,6 @@ body {
     background-color: white;
 }
 
-.blue {
-    background-color: blue;
-}
 
 .header {
     position: relative;
@@ -67,10 +27,6 @@ body {
      display: flex;
      flex-wrap: wrap; /* hace que flex no te ajuste automatico todo */
 
-}
-
-.margin {
-    margin-bottom: 10px;
 }
 
 .overlay { 
@@ -104,8 +60,8 @@ ul.slider li {
     left: 0;
     top: 0;
     opacity: 0;
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    height: 100%;
     background-color: black;
     transition: 500ms ease 0s;
 }
@@ -131,14 +87,7 @@ ul.slider li:target {
     3 circulos para pasar de imagenes
     =================================--> */
 
-.menu {
-    text-align: center;
-    opacity: 1.2;
-    position: absolute;
-    top: 90%;
-    left: 45%;
-    right: 45%;
-}
+
 
 .menu li {
     display: inline-block;
@@ -163,31 +112,13 @@ ul.slider li:target {
     background-color: white;
 }
 
-/* <!--================================
+        /* <!--================================
     INFORMACION (FELIPE NIETO     --     PROGRAMADOR)
-    =================================--> */
+        =================================--> */
 
-.header-information {
-    position: absolute;
-    height: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-left: 15px;
-    padding-right: 15px;
-    top: 10%;
-    justify-content: space-between;
 
-}
 
-.nombre-programador {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 2rem;
-    line-height: 3.5rem;
-    font-weight: 800;
-    color: white;
-    text-transform: uppercase;
-    position: relative;
-}
+
 
 .nombre-programador span {
     color: #ffc311 ;
@@ -208,26 +139,13 @@ ul.slider li:target {
     margin-bottom: 2.308rem;
 }
 
-.center {
-    position: absolute;
-    height: 60%;
-    top: 20%;
-    justify-content: center;
-    /* background-color: blue; */
-}
+
 
 /* <!--================================
             REDES SOCIALES
     =================================--> */
 
-.social-networks {
-    position: absolute;
-    height: 15%;
-    padding-left: 15px;
-    padding-right: 15px;
-    justify-content: center;
-    /* background-color: yellow; */
-}
+
 
 .social-networks .casilla-icon {
     padding: 5px;
@@ -240,7 +158,6 @@ ul.slider li:target {
 
 .social-networks .casilla-icon i {
     color: white;
- 
     transform: translate(0,0);
     transition: 0.6s cubic-bezier(0,0.6,0.35,1.21) transform, 0.2 ease opacity;
 }
@@ -254,6 +171,7 @@ ul.slider li:target {
     display: block;
     position: absolute;
     color: transparent;
+    font-size: 12px;
     left: 0;
     right: 0;
     opacity: 1;
@@ -277,41 +195,10 @@ ul.slider li:target {
                  ACADEMLO - SENA
     =================================--> */
 
-.student {
-    position: absolute;
-    height: 70%;
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    justify-content: center;
-    /* background-color: purple; */
-    margin-top: 8%;
-    margin-bottom: 2.308rem;
-}
-
-.student h2 {
-    font-family: 'Titillium Web';
-    font-size: 6.154rem;
-    line-height: 6.154rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.student p{
-    color: white;
-    font-family: 'Poppins';
-    text-align: center;
-}
-
-
 
 .sena-academlo{
     position: absolute;
     bottom: -25%;
-    /* background-color: violet; */
-    width: 100%;
     justify-content: space-between;
     align-items: center;
     height: 20%;
@@ -322,10 +209,8 @@ ul.slider li:target {
 }
 
 .sena, .academlo{
-    width: 100%;
-    height: 100%;
 
-    /* border: solid 2px black; */
+    height: 100%;
     text-align: center;
     justify-content: center;
     align-content: center;
@@ -335,23 +220,289 @@ ul.slider li:target {
 .sena-academlo a{
     display: flex;
     height: 100%;
-    width: 15%;
     text-decoration: none;
     border-bottom: solid 1px white;
     color: white;
     cursor: pointer;
+    margin-right: 5%;
 
 }
 
-.sena-academlo a span{
-    font-family: 'Poppins';
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.077rem;
-}
+
 
 .sena-academlo a:hover{
     color: #ffc311;
     border-bottom: solid 1px #ffc311;
     transition: 0.2s;
 }
+
+/* <!--================================
+            PHONE Configurations
+    =================================--> */
+    
+    @media (max-width: 768px) {
+
+        .header-information {
+            position: absolute;
+            height: 10%;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-left: 15px;
+            padding-right: 15px;
+            top: 3%;
+            justify-content: space-between;
+        
+        }
+
+        .nombre-programador {
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            font-weight: 800;
+            color: white;
+            text-transform: uppercase;
+            position: relative;
+            padding-bottom: 5px;
+        }
+
+        .center {
+            position: absolute;
+            height: 60%;
+            top: 12%;
+            justify-content: center;
+            /* background-color: blue; */
+        }
+
+        .social-networks {
+            position: absolute;
+            height: 10%;
+            padding-left: 15px;
+            padding-right: 15px;
+            justify-content: center;
+            /* background-color: yellow; */
+            
+        }
+
+        .student {
+            position: absolute;
+            height: 70%;
+            padding-left: 15px;
+            padding-right: 15px;
+            justify-content: center;
+            margin-top: 15%;
+            margin-bottom: 2.308rem;
+        }
+
+        .student h2 {
+            font-family: 'Titillium Web';
+            font-size: 3.462rem;
+            line-height: 3.462rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+        
+        .student p{
+            color: white;
+            font-family: 'Poppins';
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        .sena-academlo a span{
+            font-family: 'Poppins';
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .menu {
+            text-align: center;
+            opacity: 1.2;
+            position: absolute;
+            top: 78%;
+            left: 1%;
+            right: 45%;
+        }
+
+        /* <!--================================
+                    COL1 - COL 12 PHONE
+        =================================--> */
+
+        .col-1 {
+            width: 8.33%;    
+        }
+        .col-2 {
+            width: 16.66%;    
+        }
+        .col-3 {
+            width: 25%;    
+        }
+        .col-4 {
+            width: 33.33%;    
+        }
+        .col-5 {
+            width: 41.66%;    
+        }
+        .col-6 {
+            width: 50%;    
+        }
+        .col-7 {
+            width: 58.33%;    
+        }
+        .col-8 {
+            width: 66.66%;    
+        }
+        .col-9 {
+            width: 75%;    
+        }
+        .col-10 {
+            width: 83.33%;    
+        }
+        .col-11 {
+            width: 91.66%;    
+        }
+        .col-12 {
+            width: 100%;    
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+/* <!--================================
+            PC Configurations
+    =================================--> */
+
+    @media (min-width: 992px) { 
+
+        .header-information {
+            position: absolute;
+            height: 10%;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-left: 15px;
+            padding-right: 15px;
+            top: 10%;
+            justify-content: space-between;
+        
+        }
+
+        .nombre-programador {
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 2rem;
+            line-height: 3.5rem;
+            font-weight: 800;
+            color: white;
+            text-transform: uppercase;
+            position: relative;
+            padding-bottom: 5px;
+        }
+
+        .center {
+            position: absolute;
+            height: 60%;
+            top: 20%;
+            justify-content: center;
+            /* background-color: blue; */
+        }
+
+        .social-networks {
+            position: absolute;
+            height: 15%;
+            padding-left: 15px;
+            padding-right: 15px;
+            justify-content: center;
+            /* background-color: yellow; */
+        }
+
+        .student {
+            position: absolute;
+            height: 70%;
+            padding-left: 15px;
+            padding-right: 15px;
+            justify-content: center;
+            margin-top: 8%;
+            margin-bottom: 2.308rem;
+        }
+
+
+        .student h2 {
+            font-family: 'Titillium Web';
+            font-size: 6.154rem;
+            line-height: 6.154rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        
+        .student p{
+            color: white;
+            font-family: 'Poppins';
+            text-align: center;
+        }
+
+        .sena-academlo a span{
+            font-family: 'Poppins';
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1.077rem;
+        }
+
+        .menu {
+            text-align: center;
+            opacity: 1.2;
+            position: absolute;
+            top: 90%;
+            left: 45%;
+            right: 45%;
+        }
+
+        .col-lg-1 {
+            width: 8.33%;
+        }
+        .col-lg-2 {
+            width: 16.66%;
+        }
+        .col-lg-3 {
+            width: 25%;
+        }
+        .col-lg-4 {
+            width: 33.33%;
+        }
+        .col-lg-5 {
+            width: 41.66%;
+        }
+        .col-lg-6 {
+            width: 50%;
+        }
+        .col-lg-7 {
+            width: 58.33%;
+        }
+        .col-lg-8 {
+            width: 66.66%;
+        }
+        .col-lg-9 {
+            width: 75%;
+        }
+        .col-lg-10 {
+            width: 83.33%;
+        }
+        .col-lg-11 {
+            width: 91.66%;
+        }
+        .col-lg-12 {
+            width: 100%;
+        }
+    
+     }
+    
