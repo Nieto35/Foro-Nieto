@@ -278,7 +278,7 @@ ul.slider li:target {
             display: table-cell;
             position: relative;
             cursor: pointer;
-            padding-right: 10%;
+            padding-right: 5%;
             text-align: center;
             
         }
