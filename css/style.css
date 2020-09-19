@@ -412,10 +412,98 @@ li img {
     =================================--> */
 
 
-/* .footer{
+.footer {
+    position: relative;
     height: 20vh;
-    background-color: blue;
+    overflow: hidden;
+    /* background-color: white; */
+    /* background-color: rgba(255, 255, 255, 1); */
+    justify-content: space-between;
+}
+
+.overlay-footer {
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background:rgba(255,255,255,0.5);
+
+}
+
+.footer img{
+    position: absolute;
+    top: -220%;
+    width: 100%;
+  
+    /* height: ; */
+}
+
+/* .space {
+    position: relative;
+    height: 100%;
+    background-color: #0474bc;
 } */
+
+.logo-academlo {
+    position: relative;
+    overflow: hidden;
+    /* background-color: #e44c24; */
+    /* background-color: red; */
+    height: 100%;
+    align-items: center;
+    
+}
+
+.nombre-footer {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.logo-sena img{
+    width: 100%;
+    height: 160%;
+    position: absolute;
+    top: -30%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo-academlo img{
+    width: 100%;
+    position: absolute;
+    top: -5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* height: 100%; */
+}
+
+.nombre-footer i{
+    position: relative;
+    color: white;
+    top: 1%;
+
+}
+
+.wpp{
+    padding-top: 5%;
+    padding-bottom: 1%;
+    /* align-items: center; */
+    justify-content: center;
+    height: 50%;
+}
+
+.numero{
+    padding-bottom: 5%;
+    height: 50%;
+    justify-content: center;
+
+}
 
 /* <!--================================
             PHONE Configurations
@@ -518,6 +606,18 @@ li img {
             left: 1%;
             right: 80%;
         }
+
+        .nombre-footer p{
+            font-size: 2rem;
+            line-height: 4rem;
+        }
+
+
+        #text-footer {
+            font-size: 3.5rem;
+            line-height: 4rem;
+        }
+
 
         /* <!--================================
                     COL1 - COL 12 PHONE
@@ -670,6 +770,16 @@ li img {
             right: 45%;
         }
 
+        .nombre-footer p{
+            font-size: 2rem;
+            line-height: 4rem;
+        }
+
+
+        #text-footer {
+            font-size: 3.5rem;
+            line-height: 4rem;
+        }
 
         
 
