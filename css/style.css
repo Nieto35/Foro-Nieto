@@ -22,6 +22,13 @@ body {
     overflow: hidden;
 }
 
+.body {
+    position: relative;
+    height: 100vh;
+    justify-content: space-around;
+    /* overflow: hidden; */
+}
+
 .flex {
 
      display: flex;
@@ -37,6 +44,15 @@ body {
     left: 0;
     background:rgba(0,0,0,0.5);
 }
+
+/* .overlay-body { 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background:rgba(0,0,0,0.2);
+} */
 
 /* <!--================================
             Sliders Configurations
@@ -226,6 +242,179 @@ ul.slider li:target {
     transition: 0.2s;
 }
 
+
+
+
+/* <!--================================
+                 HTML-CSS-JS
+    =================================--> */
+
+
+
+
+.body img{
+    width: 100%;
+    height: 100%;
+}
+
+.presentation-image {
+    height: 100%;
+    /* background-color: blue; */
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    background-size: cover;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    padding-right: 5%;
+    padding-left: 5%;
+    background:rgba(0,0,0,0.2);
+    /* border: solid 1px white; */
+
+ 
+}
+
+
+.html {
+    background-color: #e44c24;
+}
+
+.css{
+    background-color: #0474bc;
+}
+
+.js{
+    background-color: #ebdb4b;
+}
+
+.presentation-image img {
+    width: 100%;
+    height: auto;
+
+}
+
+.presentation-image h3{
+    position: absolute;
+    bottom: 15%;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Titillium Web';
+    font-size: 5rem;
+    color: white;
+    transition: 1s ease 0s;
+}
+
+.action-html, .action-css, .action-js {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 100%;
+    transition: 1s ease 0s;
+}
+
+.body .html:hover .action-html{
+    bottom: 0;
+    transition: 1s ease 0s;
+}
+
+.body .css:hover .action-css{
+    bottom: 0;
+    transition: 1s ease 0s;
+}
+
+.body .js:hover .action-js{
+    bottom: 0;
+    transition: 1s ease 0s;
+}
+
+
+
+.body .html:hover h3{
+    bottom: 0%;
+    color: transparent;
+}
+
+.body .css:hover h3{
+    bottom: 0%;
+    color: transparent;
+}
+
+.body .js:hover h3{
+    bottom: 0%;
+    color: transparent;
+}
+
+
+.presentation-image p{
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    right: -126%;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Titillium Web';
+    font-size: 2rem;
+    color: transparent;
+    transition: 1s ease 0s;
+}
+
+.presentation-image span{
+    position: absolute;
+    text-align: center;
+    bottom: 15%;
+    right: -126%;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Titillium Web';
+    font-size: 4rem;
+    color: white;
+    transition: 1s ease 0s;
+}
+
+
+.body .html:hover p{
+    color: white;
+    right: 0%;
+   
+}
+
+.body .css:hover p{
+    color: white;
+    right: 0%;
+   
+}
+
+.body .js:hover p{
+    color: white;
+    right: 0%;
+   
+}
+
+
+
+
+.body .html:hover span{
+    color: white;
+    right: 5%;
+   
+}
+
+.body .css:hover span{
+    color: white;
+    right: 5%;
+   
+}
+
+.body .js:hover span{
+    color: white;
+    right: 5%;
+   
+}
+
+
 /* <!--================================
             PHONE Configurations
     =================================--> */
@@ -385,9 +574,7 @@ ul.slider li:target {
 
     @media (min-width: 992px) { 
 
-        .blue{
-            background-color: blue;
-        }
+        
 
         .header-information {
             position: absolute;
@@ -480,6 +667,10 @@ ul.slider li:target {
             left: 45%;
             right: 45%;
         }
+
+
+        
+
 
         .col-lg-1 {
             width: 8.33%;
