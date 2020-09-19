@@ -370,19 +370,19 @@ li img {
 
 .body .html:hover p{
     color: white;
-    right: 0%;
+    right: 5%;
    
 }
 
 .body .css:hover p{
     color: white;
-    right: 0%;
+    right: 5%;
    
 }
 
 .body .js:hover p{
     color: white;
-    right: 0%;
+    right: 5%;
    
 }
 
@@ -391,19 +391,19 @@ li img {
 
 .body .html:hover span{
     color: white;
-    right: 5%;
+    right: 10%;
    
 }
 
 .body .css:hover span{
     color: white;
-    right: 5%;
+    right: 10%;
    
 }
 
 .body .js:hover span{
     color: white;
-    right: 5%;
+    right: 10%;
    
 }
 
