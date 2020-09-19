@@ -6,7 +6,6 @@
     font-family: 'Titillium Web', sans-serif;
 }
 
-
 /* <!--================================
             Globals Configurations
     =================================--> */
@@ -24,7 +23,7 @@ body {
 
 .body {
     position: relative;
-    height: 100vh;
+    height: 100%;
     justify-content: space-around;
     /* overflow: hidden; */
 }
@@ -45,14 +44,7 @@ body {
     background:rgba(0,0,0,0.5);
 }
 
-/* .overlay-body { 
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background:rgba(0,0,0,0.2);
-} */
+
 
 /* <!--================================
             Sliders Configurations
@@ -91,6 +83,9 @@ li img {
     opacity: 0;
 }
 
+
+
+
 /* <!--================================
     3 circulos para pasar de imagenes
     =================================--> */
@@ -125,7 +120,26 @@ li img {
     INFORMACION (FELIPE NIETO     --     PROGRAMADOR)
         =================================--> */
 
+.header-information {
+    position: absolute;
+    height: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
 
+}
+
+
+.nombre-programador {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 5px;
+}
 
 
 
@@ -143,7 +157,6 @@ li img {
 .inner {
     position: absolute;
     height: 100%;
-    /* background-color: red; */
     justify-content: center;
     margin-bottom: 2.308rem;
 }
@@ -153,6 +166,12 @@ li img {
 /* <!--================================
             REDES SOCIALES
     =================================--> */
+
+.center {
+    position: absolute;
+    height: 60%;
+    justify-content: center;
+}
 
 
 .social-networks .casilla-icon i {
@@ -165,6 +184,22 @@ li img {
     display: table;
     text-align: center;
 }
+
+.social-networks {
+    position: absolute;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+}
+
+.social-networks .casilla-icon {
+    padding: 5px;
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
 
 .social-networks .casilla-icon span{
     display: block;
@@ -191,11 +226,58 @@ li img {
 
 
 /* <!--================================
+            STUDENT
+    =================================--> */
+
+   
+.student {
+    position: absolute;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+    margin-bottom: 2.308rem;
+}
+
+
+.student h2 {
+    font-family: 'Titillium Web';
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.student p{
+    color: white;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.sena-academlo a span{
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+/* <!--================================
+            MENU
+    =================================--> */
+
+
+.menu {
+    text-align: center;
+    opacity: 1.2;
+    position: absolute;
+}
+
+
+/* <!--================================
                  ACADEMLO - SENA
     =================================--> */
 
 
-.sena-academlo{
+.sena-academlo {
     position: absolute;
     bottom: -25%;
     justify-content: space-between;
@@ -207,7 +289,7 @@ li img {
     padding-right: 15%;
 }
 
-.sena, .academlo{
+.sena, .academlo {
 
     height: 100%;
     text-align: center;
@@ -215,8 +297,7 @@ li img {
     align-content: center;
 }
 
-
-.sena-academlo a{
+.sena-academlo a {
     display: flex;
     height: 100%;
     text-decoration: none;
@@ -228,14 +309,11 @@ li img {
 }
 
 
-
-.sena-academlo a:hover{
+.sena-academlo a:hover {
     color: #ffc311;
     border-bottom: solid 1px #ffc311;
     transition: 0.2s;
 }
-
-
 
 
 /* <!--================================
@@ -243,16 +321,13 @@ li img {
     =================================--> */
 
 
-
-
-.body img{
+.body img {
     width: 100%;
     height: 100%;
 }
 
 .presentation-image {
     height: 100%;
-    /* background-color: blue; */
     position: relative;
     top: 0;
     overflow: hidden;
@@ -263,9 +338,46 @@ li img {
     padding-right: 5%;
     padding-left: 5%;
     background:rgba(0,0,0,0.2);
-    /* border: solid 1px white; */
 
  
+}
+
+
+
+.presentation-image h3 {
+    position: absolute;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Titillium Web';
+    font-size: 5rem;
+    color: white;
+    transition: 1s ease 0s;
+}
+
+
+.presentation-image p {
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    right: -126%;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Titillium Web';
+    color: transparent;
+    transition: 1s ease 0s;
+}
+
+
+.presentation-image span {
+    position: absolute;
+    text-align: center;
+    bottom: 15%;
+    right: -156%;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Titillium Web';
+    color: white;
+    transition: 1s ease 0s;
 }
 
 
@@ -273,11 +385,11 @@ li img {
     background-color: #e44c24;
 }
 
-.css{
+.css {
     background-color: #0474bc;
 }
 
-.js{
+.js {
     background-color: #ebdb4b;
 }
 
@@ -285,17 +397,6 @@ li img {
     width: 100%;
     height: auto;
 
-}
-
-.presentation-image h3{
-    position: absolute;
-    bottom: 15%;
-    font-weight: 800;
-    text-transform: uppercase;
-    font-family: 'Titillium Web';
-    font-size: 5rem;
-    color: white;
-    transition: 1s ease 0s;
 }
 
 .action-html, .action-css, .action-js {
@@ -308,104 +409,39 @@ li img {
     transition: 1s ease 0s;
 }
 
-.body .html:hover .action-html{
+.body .html:hover .action-html {
     bottom: 0;
     transition: 1s ease 0s;
 }
 
-.body .css:hover .action-css{
+.body .css:hover .action-css {
     bottom: 0;
     transition: 1s ease 0s;
 }
 
-.body .js:hover .action-js{
+.body .js:hover .action-js {
     bottom: 0;
     transition: 1s ease 0s;
 }
 
 
-
-.body .html:hover h3{
+.body .html:hover h3 {
     bottom: 0%;
     color: transparent;
 }
 
-.body .css:hover h3{
+.body .css:hover h3 {
     bottom: 0%;
     color: transparent;
 }
 
-.body .js:hover h3{
+.body .js:hover h3 {
     bottom: 0%;
     color: transparent;
 }
 
 
-.presentation-image p{
-    position: absolute;
-    text-align: center;
-    top: 15%;
-    right: -126%;
-    font-weight: 800;
-    text-transform: uppercase;
-    font-family: 'Titillium Web';
-    font-size: 2rem;
-    color: transparent;
-    transition: 1s ease 0s;
-}
 
-.presentation-image span{
-    position: absolute;
-    text-align: center;
-    bottom: 15%;
-    right: -126%;
-    font-weight: 800;
-    text-transform: uppercase;
-    font-family: 'Titillium Web';
-    font-size: 4rem;
-    color: white;
-    transition: 1s ease 0s;
-}
-
-
-.body .html:hover p{
-    color: white;
-    right: 5%;
-   
-}
-
-.body .css:hover p{
-    color: white;
-    right: 5%;
-   
-}
-
-.body .js:hover p{
-    color: white;
-    right: 5%;
-   
-}
-
-
-
-
-.body .html:hover span{
-    color: white;
-    right: 7%;
-   
-}
-
-.body .css:hover span{
-    color: white;
-    right: 7%;
-   
-}
-
-.body .js:hover span{
-    color: white;
-    right: 7%;
-   
-}
 
 /* <!--================================
             footer
@@ -416,13 +452,10 @@ li img {
     position: relative;
     height: 20vh;
     overflow: hidden;
-    /* background-color: white; */
-    /* background-color: rgba(255, 255, 255, 1); */
     justify-content: space-between;
 }
 
 .overlay-footer {
-
     position: absolute;
     top: 0;
     bottom: 0;
@@ -432,25 +465,16 @@ li img {
 
 }
 
-.footer img{
+.footer img {
     position: absolute;
     top: -220%;
     width: 100%;
-  
-    /* height: ; */
 }
 
-/* .space {
-    position: relative;
-    height: 100%;
-    background-color: #0474bc;
-} */
 
 .logo-academlo {
     position: relative;
     overflow: hidden;
-    /* background-color: #e44c24; */
-    /* background-color: red; */
     height: 100%;
     align-items: center;
     
@@ -464,8 +488,7 @@ li img {
 }
 
 
-
-.logo-sena img{
+.logo-sena img {
     width: 100%;
     height: 160%;
     position: absolute;
@@ -474,199 +497,377 @@ li img {
     padding-right: 10%;
 }
 
-.logo-academlo img{
+.logo-academlo img {
     width: 100%;
     position: absolute;
     top: -5%;
     padding-left: 5%;
     padding-right: 5%;
-    /* height: 100%; */
+ 
 }
 
-.nombre-footer i{
+
+
+
+.nombre-footer i {
     position: relative;
     color: white;
     top: 1%;
 
 }
 
-.wpp{
-    padding-top: 5%;
-    padding-bottom: 1%;
-    /* align-items: center; */
-    justify-content: center;
-    height: 50%;
-}
 
-.numero{
-    padding-bottom: 5%;
-    height: 50%;
-    justify-content: center;
-
-}
 
 /* <!--================================
             PHONE Configurations
     =================================--> */
     
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
 
-        .header-information {
-            position: absolute;
-            height: 10%;
-            margin-left: 5%;
-            margin-right: 5%;
-            padding-left: 15px;
-            padding-right: 15px;
-            top: 3%;
-            justify-content: space-between;
+    .header-information {
+        top: 3%;
+    
+    }
+
+    .nombre-programador {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .center {
+        top: 13%;
+    }
+
+    .social-networks {
+        height: 10%; 
+    }
+
+    .social-networks .casilla-icon {
+        padding-right: 5%;         
+    }
+
+    .student {
+        height: 80%;
+        margin-top: 18%;
+    }
+
+    .student h2 {
+        font-size: 3.462rem;
+        line-height: 3.462rem;
+    }
+
+    
+    .student p {
+        font-size: 0.8rem;
+    }
+
+    .sena-academlo a span {
+        font-size: 1rem;
+    }
+
+    .menu {
+        top: 90%;
+        left: 1%;
+        right: 80%;
+    }
+
+    .presentation-image h3 {
+        bottom: -2%;
+    }
+    
+    
+    
+    .presentation-image p {
+        font-size: 1.5rem;
+    }
+
+    .presentation-image span {
+        font-size: 2rem;
+    }
+
+
+
+    .body .html:hover span {
+        color: white;
+        right: 25%;
         
-        }
-
-        .nombre-programador {
-            font-family: 'Titillium Web', sans-serif;
-            font-size: 1.2rem;
-            line-height: 1.5rem;
-            font-weight: 800;
-            color: white;
-            text-transform: uppercase;
-            position: relative;
-            padding-bottom: 5px;
-        }
-
-        .center {
-            position: absolute;
-            height: 60%;
-            top: 13%;
-            justify-content: center;
-            /* background-color: blue; */
-        }
-
-        .social-networks {
-            position: absolute;
-            height: 10%;
-            padding-left: 15px;
-            padding-right: 15px;
-            justify-content: center;
-            /* background-color: yellow; */
-            
-        }
-
-        .social-networks .casilla-icon {
-            padding: 5px;
-            display: table-cell;
-            position: relative;
-            cursor: pointer;
-            padding-right: 5%;
-            text-align: center;
-            
-        }
-
-         
-
-        .student {
-            position: absolute;
-            height: 80%;
-            padding-left: 15px;
-            padding-right: 15px;
-            justify-content: center;
-            margin-top: 18%;
-            margin-bottom: 2.308rem;
-        }
-
-        .student h2 {
-            font-family: 'Titillium Web';
-            font-size: 3.462rem;
-            line-height: 3.462rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            color: #FFFFFF;
-        }
-
+    }
+    
+    .body .css:hover span {
+        color: white;
+        right: 25%;
         
-        .student p{
-            color: white;
-            font-family: 'Poppins';
-            text-align: center;
-            font-size: 0.8rem;
-        }
+    }
+    
+    .body .js:hover span {
+        color: white;
+        right: 25%;
+        
+    }
 
-        .sena-academlo a span{
-            font-family: 'Poppins';
-            text-transform: uppercase;
-            font-weight: 600;
-            font-size: 1rem;
-        }
+    
+    .body .html:hover p {
+        color: white;
+        right: 5%;
+    
+    }
 
-        .menu {
-            text-align: center;
-            opacity: 1.2;
-            position: absolute;
-            top: 90%;
-            left: 1%;
-            right: 80%;
-        }
+    .body .css:hover p {
+        color: white;
+        right: 5%;
+    
+    }
 
-        .nombre-footer p{
-            font-size: 2rem;
-            line-height: 4rem;
-        }
-
-
-        #text-footer {
-            font-size: 3.5rem;
-            line-height: 4rem;
-        }
+    .body .js:hover p {
+        color: white;
+        right: 5%;
+    
+    }
 
 
-        /* <!--================================
-                    COL1 - COL 12 PHONE
-        =================================--> */
+    #text-footer span {
+        display: block;
+        padding-top: 15%;
+    } 
 
-        .col-1 {
-            width: 8.33%;    
-        }
-        .col-2 {
-            width: 16.66%;    
-        }
-        .col-3 {
-            width: 25%;    
-        }
-        .col-4 {
-            width: 33.33%;    
-        }
-        .col-5 {
-            width: 41.66%;    
-        }
-        .col-6 {
-            width: 50%;    
-        }
-        .col-7 {
-            width: 58.33%;    
-        }
-        .col-8 {
-            width: 66.66%;    
-        }
-        .col-9 {
-            width: 75%;    
-        }
-        .col-10 {
-            width: 83.33%;    
-        }
-        .col-11 {
-            width: 91.66%;    
-        }
-        .col-12 {
-            width: 100%;    
-        }
+
+    #text-footer {
+        font-size: 2rem;
+        line-height: 1rem;
+    }
+
+    .contacto {
+        flex-direction: column;
+        justify-content: space-around;
     }
 
 
 
 
+    .wpp {
+        padding-top: 5%;
+        padding-bottom: 1%;
+        padding-right: 2%;
+        justify-content: center;
+        height: 50%;
+    }
+    
+    .numero {
+        padding-left: 2%;
+        padding-bottom: 5%;
+        height: 50%;
+        justify-content: center;
+        text-align: center;
+    
+    }
 
 
+    /* <!--================================
+                COL1 - COL 12 PHONE
+    =================================--> */
 
+    .col-1 {
+        width: 8.33%;    
+    }
+    .col-2 {
+        width: 16.66%;    
+    }
+    .col-3 {
+        width: 25%;    
+    }
+    .col-4 {
+        width: 33.33%;    
+    }
+    .col-5 {
+        width: 41.66%;    
+    }
+    .col-6 {
+        width: 50%;    
+    }
+    .col-7 {
+        width: 58.33%;    
+    }
+    .col-8 {
+        width: 66.66%;    
+    }
+    .col-9 {
+        width: 75%;    
+    }
+    .col-10 {
+        width: 83.33%;    
+    }
+    .col-11 {
+        width: 91.66%;    
+    }
+    .col-12 {
+        width: 100%;    
+    }
+}
+
+
+/* <!--================================
+            TABLE Configuration
+    =================================--> */
+
+@media (min-width: 768px) and (max-width: 992px) { 
+
+
+    .header-information {
+        top: 10%;
+    
+    }
+
+    .nombre-programador {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+
+    .center {
+        top: 20%;
+    }
+
+    .social-networks {
+        height: 15%;
+    }
+
+    .student {
+        height: 70%;
+        margin-top: 15%;
+    }
+
+
+    .student h2 {
+        font-size: 6.154rem;
+        line-height: 6.154rem;
+        text-align: center;
+    }
+
+    .sena-academlo a span{
+        font-size: 1.077rem;
+    }
+
+    .menu {
+        top: 90%;
+        left: 1%;
+        right: 80%;
+    }
+
+    .presentation-image h3 {
+        bottom: 15%;
+    }
+
+    .presentation-image p {
+        font-size: 2rem;
+    }
+    
+    .presentation-image span {
+        font-size: 4rem;     
+    }
+
+
+    .body .html:hover span {
+        color: white;
+        right: 25%;
+        
+    }
+    
+    .body .css:hover span {
+        color: white;
+        right: 25%;
+        
+    }
+    
+    .body .js:hover span {
+        color: white;
+        right: 25%;
+        
+    }
+
+    .body .html:hover p {
+        color: white;
+        right: 16%;
+    
+    }
+
+    .body .css:hover p {
+        color: white;
+        right: 16%;
+    
+    }
+
+    .body .js:hover p {
+        color: white;
+        right: 16%;
+    
+    }
+
+
+    #text-footer span{
+        display: block;
+        padding-top: 15%;
+    } 
+
+    #text-footer {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+
+    .wpp {
+        padding-top: 5%;
+        padding-bottom: 1%;
+        justify-content: center;
+        height: 50%;
+    }
+    
+    .numero {
+        padding-bottom: 5%;
+        height: 50%;
+        justify-content: center;
+    
+    }
+    
+
+    /* <!--================================
+                COL1 - COL 12 TABLE
+    =================================--> */
+    .col-md-1 {
+        width: 8.33%;
+    }
+    .col-md-2 {
+        width: 16.66%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-4 {
+        width: 33.33%;
+    }
+    .col-md-5 {
+        width: 41.66%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-7 {
+        width: 58.33%;
+    }
+    .col-md-8 {
+        width: 66.66%;
+    }
+    .col-md-9 {
+        width: 75%;
+    }
+    .col-md-10 {
+        width: 83.33%;
+    }
+    .col-md-11 {
+        width: 91.66%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+
+}
 
 
 
@@ -674,152 +875,156 @@ li img {
             PC Configurations
     =================================--> */
 
-    @media (min-width: 992px) { 
+@media (min-width: 992px) { 
 
-        
-
-        .header-information {
-            position: absolute;
-            height: 10%;
-            margin-left: 5%;
-            margin-right: 5%;
-            padding-left: 15px;
-            padding-right: 15px;
-            top: 10%;
-            justify-content: space-between;
-        
-        }
-
-        .nombre-programador {
-            font-family: 'Titillium Web', sans-serif;
-            font-size: 2rem;
-            line-height: 3.5rem;
-            font-weight: 800;
-            color: white;
-            text-transform: uppercase;
-            position: relative;
-            padding-bottom: 5px;
-        }
-
-        .center {
-            position: absolute;
-            height: 60%;
-            top: 20%;
-            justify-content: center;
-            /* background-color: blue; */
-        }
-
-        .social-networks {
-            position: absolute;
-            height: 15%;
-            padding-left: 15px;
-            padding-right: 15px;
-            justify-content: center;
-            /* background-color: yellow; */
-        }
-
-        .social-networks .casilla-icon {
-            padding: 5px;
-            display: table-cell;
-            position: relative;
-            text-align: center;
-            cursor: pointer;
-          }
-
-        .student {
-            position: absolute;
-            height: 70%;
-            padding-left: 15px;
-            padding-right: 15px;
-            justify-content: center;
-            margin-top: 8%;
-            margin-bottom: 2.308rem;
-        }
-
-
-        .student h2 {
-            font-family: 'Titillium Web';
-            font-size: 6.154rem;
-            line-height: 6.154rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            text-align: center;
-            color: #FFFFFF;
-        }
-
-        
-        .student p{
-            color: white;
-            font-family: 'Poppins';
-            text-align: center;
-        }
-
-        .sena-academlo a span{
-            font-family: 'Poppins';
-            text-transform: uppercase;
-            font-weight: 600;
-            font-size: 1.077rem;
-        }
-
-        .menu {
-            text-align: center;
-            opacity: 1.2;
-            position: absolute;
-            top: 90%;
-            left: 45%;
-            right: 45%;
-        }
-
-        .nombre-footer p{
-            font-size: 2rem;
-            line-height: 4rem;
-        }
-
-
-        #text-footer {
-            font-size: 3.5rem;
-            line-height: 4rem;
-        }
-
-        
-
-
-        .col-lg-1 {
-            width: 8.33%;
-        }
-        .col-lg-2 {
-            width: 16.66%;
-        }
-        .col-lg-3 {
-            width: 25%;
-        }
-        .col-lg-4 {
-            width: 33.33%;
-        }
-        .col-lg-5 {
-            width: 41.66%;
-        }
-        .col-lg-6 {
-            width: 50%;
-        }
-        .col-lg-7 {
-            width: 58.33%;
-        }
-        .col-lg-8 {
-            width: 66.66%;
-        }
-        .col-lg-9 {
-            width: 75%;
-        }
-        .col-lg-10 {
-            width: 83.33%;
-        }
-        .col-lg-11 {
-            width: 91.66%;
-        }
-        .col-lg-12 {
-            width: 100%;
-        }
+    .header-information {
+        top: 10%;
     
-     }
+    }
+
+    .nombre-programador {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+
+    .center {
+        top: 20%;
+    }
+
+    .social-networks {
+        height: 15%;
+    }
+
+    .student {
+        height: 70%;
+        margin-top: 8%;
+    }
+
+    .student h2 {
+        font-size: 6.154rem;
+        line-height: 6.154rem;
+        text-align: center;
+    }
+
+    .sena-academlo a span{
+        font-size: 1.077rem;
+    }
+
+    .menu {
+        top: 90%;
+        left: 45%;
+        right: 45%;
+    }
+
+    .presentation-image h3 {
+        bottom: 15%;
+    }
+
+    .presentation-image p {
+        font-size: 2rem;
+    }
+    
+    .presentation-image span {
+        font-size: 4rem;     
+    }
+
+    .body .html:hover span {
+        color: white;
+        right: 7%;
+        
+    }
+    
+    .body .css:hover span {
+        color: white;
+        right: 7%;
+        
+    }
+    
+    .body .js:hover span {
+        color: white;
+        right: 7%;
+        
+    }
+    
+    .body .html:hover p {
+        color: white;
+        right: 5%;
+    
+    }
+
+    .body .css:hover p {
+        color: white;
+        right: 5%;
+    
+    }
+
+    .body .js:hover p {
+        color: white;
+        right: 5%;
+    
+    }
+
+
+    #text-footer {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+
+
+
+
+    .wpp {
+        padding-top: 5%;
+        padding-bottom: 1%;
+        justify-content: center;
+        height: 50%;
+    }
+    
+    .numero {
+        padding-bottom: 5%;
+        height: 50%;
+        justify-content: center;
+    
+    }
+    
+
+
+    .col-lg-1 {
+        width: 8.33%;
+    }
+    .col-lg-2 {
+        width: 16.66%;
+    }
+    .col-lg-3 {
+        width: 25%;
+    }
+    .col-lg-4 {
+        width: 33.33%;
+    }
+    .col-lg-5 {
+        width: 41.66%;
+    }
+    .col-lg-6 {
+        width: 50%;
+    }
+    .col-lg-7 {
+        width: 58.33%;
+    }
+    .col-lg-8 {
+        width: 66.66%;
+    }
+    .col-lg-9 {
+        width: 75%;
+    }
+    .col-lg-10 {
+        width: 83.33%;
+    }
+    .col-lg-11 {
+        width: 91.66%;
+    }
+    .col-lg-12 {
+        width: 100%;
+    }
+
+}
     
