@@ -87,6 +87,10 @@ li img {
 }
 
 
+.slider input[type="radio"]{
+    opacity: 0;
+}
+
 /* <!--================================
     3 circulos para pasar de imagenes
     =================================--> */
@@ -403,6 +407,15 @@ li img {
    
 }
 
+/* <!--================================
+            footer
+    =================================--> */
+
+
+/* .footer{
+    height: 20vh;
+    background-color: blue;
+} */
 
 /* <!--================================
             PHONE Configurations
